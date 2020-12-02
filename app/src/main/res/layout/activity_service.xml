@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/idd"
+        android:textSize="22sp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/opName"
+        android:text="Operator Name: "
+        android:layout_margin="8dp"
+        android:textSize="16sp"
+        android:fontFamily="monospace"
+        android:textAlignment="viewEnd"
+        app:layout_constraintTop_toBottomOf="@+id/idd"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ser"
+        android:text="Service ID: "
+        android:layout_margin="8dp"
+        android:textSize="16sp"
+        android:fontFamily="monospace"
+        android:textAlignment="viewEnd"
+        app:layout_constraintTop_toBottomOf="@+id/opName"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mand"
+        android:text="* represents the mandatory field."
+        android:layout_margin="15dp"
+        android:textSize="16sp"
+        android:fontFamily="monospace"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/ser"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/mand"
+        android:layout_marginTop="15dp"
+        android:id="@+id/linearO"
+        android:padding="5dp"
+        android:orientation="vertical"/>
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:text="OK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="15dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
